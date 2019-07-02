@@ -13,7 +13,7 @@ export const tvApi = {
   topRated: () => api.get("tv/top_rated"),
   airingToday: () => api.get("tv/airing_today"),
   search: term =>
-    api.get("search/movie", {
+    api.get("search/tv", {
       params: {
         query: encodeURI(term)
       }
@@ -31,7 +31,7 @@ export const moviesApi = {
   upcoming: () => api.get("movie/upcoming"),
   popular: () => api.get("movie/popular"),
   search: term =>
-    api.get("search/tv", {
+    api.get("search/movie", {
       params: {
         query: encodeURI(term)
       }
