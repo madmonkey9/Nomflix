@@ -7,7 +7,7 @@ import Message from "../../Components/Message";
 import Poster from "../../Components/Poster";
 
 const Container = styled.div`
-  padding: 0px 20px;
+  padding: 20px;
 `;
 
 const HomePresenter = ({ popular, nowPlaying, upcoming, error, loading }) =>
@@ -23,7 +23,7 @@ const HomePresenter = ({ popular, nowPlaying, upcoming, error, loading }) =>
               id={movie.id}
               imageUrl={movie.poster_path}
               title={movie.original_title}
-              raiting={movie.vote_average}
+              rating={movie.vote_average}
               year={movie.release_date && movie.release_date.substring(0, 4)}
               isMovie={true}
             />
@@ -38,7 +38,7 @@ const HomePresenter = ({ popular, nowPlaying, upcoming, error, loading }) =>
               id={movie.id}
               imageUrl={movie.poster_path}
               title={movie.original_title}
-              raiting={movie.vote_average}
+              rating={movie.vote_average}
               year={movie.release_date && movie.release_date.substring(0, 4)}
               isMovie={true}
             />
@@ -53,7 +53,7 @@ const HomePresenter = ({ popular, nowPlaying, upcoming, error, loading }) =>
               id={movie.id}
               imageUrl={movie.poster_path}
               title={movie.original_title}
-              raiting={movie.vote_average}
+              rating={movie.vote_average}
               year={movie.release_date && movie.release_date.substring(0, 4)}
               isMovie={true}
             />
