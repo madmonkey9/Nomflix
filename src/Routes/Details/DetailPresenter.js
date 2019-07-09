@@ -32,13 +32,13 @@ const BackDrop = styled.div`
 const Content = styled.div`
   display: flex;
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 910px;
+  height: 1000px;
 `;
 
 const Cover = styled.div`
-  height: 100%;
-  width: 30%;
+  height: 800px;
+  width: 500px;
   background: url(${props => props.bgUrl});
   background-position: center center;
   background-size: cover;
@@ -47,18 +47,19 @@ const Cover = styled.div`
 
 const Data = styled.div`
   height: 100%;
-  width: 70%;
+  width: 400px;
   margin-left: 10px;
 `;
 
 const Title = styled.h3`
   font-size: 32px;
   margin-bottom: 20px;
+  /* width: 50%; */
 `;
 
 const ItemContainer = styled.div`
   margin: 20px 0px;
-  width: 50%;
+  /* width: 50%; */
 `;
 
 const Item = styled.span``;
@@ -80,14 +81,14 @@ const Youtube = styled.a`
 const Overview = styled.p`
   font-size: 11px;
   opacity: 0.7;
-  width: 50%;
+  /* width: 50%; */
   line-height: 1.5;
 `;
 
 const CompanyTab = styled.div`
   margin-top: 30px;
   background-color: #898989;
-  width: 50%;
+  width: 400px;
   height: 1fr;
   opacity: 0.7;
   border-radius: 6px;
@@ -102,7 +103,7 @@ const CompanyTab = styled.div`
 const SeriesTab = styled.div`
   margin-top: 30px;
   background-color: #898989;
-  width: 50%;
+  width: 400px;
   height: 1fr;
   opacity: 0.7;
   border-radius: 6px;
@@ -132,7 +133,7 @@ const Company = styled.div`
   background-repeat: no-repeat;
   background-position: center center;
   height: 200px;
-  width: 100%;
+  width: 125px;
   justify-content: center;
   display: flex;
 `;
