@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 const Container = styled.div`
   height: 100vh;
@@ -13,7 +15,7 @@ const Container = styled.div`
 const Loader = () => (
   <Container>
     <span role="img" aria-label="Loading">
-      🕜
+      <FontAwesomeIcon icon={faSpinner} />
     </span>
   </Container>
 );

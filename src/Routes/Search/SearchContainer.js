@@ -8,7 +8,8 @@ export default class extends React.Component {
     tvResults: null,
     searchTerm: "",
     loading: false,
-    error: null
+    error: null,
+    newTerm: null
   };
 
   handleSubmit = event => {
@@ -16,6 +17,8 @@ export default class extends React.Component {
     const { searchTerm } = this.state;
     if (searchTerm !== "") {
       this.searchByTerm();
+      this.newTerm = searchTerm;
+      console.log(this.newTerm);
     }
   };
 
@@ -61,6 +64,7 @@ export default class extends React.Component {
         error={error}
         handleSubmit={this.handleSubmit}
         updateTerm={this.updateTerm}
+        newTerm={this.newTerm}
       />
     );
   }
