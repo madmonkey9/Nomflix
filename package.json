@@ -29,7 +29,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
-  "homepage": "https://madmonkey9.github.io/Nomflix",
+  "homepage": "https://peaceful-mcnulty-b61de8.netlify.com/",
   "browserslist": {
     "production": [
       ">0.2%",
